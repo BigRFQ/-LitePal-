@@ -6,13 +6,47 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/create_database"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="0dp"
+        android:text="创建数据库"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/add_database"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="添加数据"
+        app:layout_constraintTop_toBottomOf="@+id/create_database"
+        tools:layout_editor_absoluteX="0dp" />
+    <Button
+        android:id="@+id/update_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="更新数据"
+        app:layout_constraintTop_toBottomOf="@+id/add_database"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/delete_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="删除数据"
+        app:layout_constraintTop_toBottomOf="@+id/update_data"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/query_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="查询数据"
+        app:layout_constraintTop_toBottomOf="@+id/delete_data"
+        tools:layout_editor_absoluteX="0dp" />
 
 </android.support.constraint.ConstraintLayout>
